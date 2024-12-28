@@ -25,11 +25,9 @@ console.log("letmepdf is running on this page!");
                                 elm.setAttribute("target", "_blank");
                                 elm.setAttribute("rel", "noopener noreferrer");
                                 eve.target.click();
-                                window.focus();
                             }
                         });
                 }
-                window.focus();
             });
         });
     };
