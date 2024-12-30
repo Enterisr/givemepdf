@@ -25,14 +25,11 @@ console.log("letmepdf is running on this page!");
                                 if (dataUrl) {
                                     console.log("changeing link...");
                                     elm.href = dataUrl;
-                                    elm.setAttribute("data-letmepdf", "true");
-                                    elm.setAttribute("target", "_blank");
-                                    elm.setAttribute(
-                                        "rel",
-                                        "noopener noreferrer"
-                                    );
-                                    eve.target.click();
                                 }
+                                elm?.setAttribute("target", "_blank");
+                                elm?.setAttribute("rel", "noopener noreferrer");
+                                elm?.setAttribute("data-letmepdf", "true");
+                                if (eve?.target?.click) eve.target.click();
                             });
                     }
                 });
