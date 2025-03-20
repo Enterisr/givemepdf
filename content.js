@@ -18,7 +18,7 @@ console.log("letmepdf is running on this page!");
                             })
                             .then((text) => {
                                 const regex =
-                                    /object id="resourceobject"\s+data="([^"]+)"/;
+                                   /(?:object|iframe) id="resourceobject"\s+(?:data|src)="([^"]+)"/;
                                 const match = text.match(regex);
                                 const dataUrl = match ? match[1] : null;
 

@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
-    "name": "Moodle Course Extension",
-    "version": "1.2",
+    "name": "Moodle Previewer Bypass",
+    "version": "1.21",
     "description": "A Chrome extension that moodle pages and turns off the default 'pdf viewer'.",
     "permissions": ["activeTab"],
     "content_scripts": [
